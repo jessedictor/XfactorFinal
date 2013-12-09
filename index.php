@@ -50,7 +50,7 @@
 	<body>
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
-				<div class="container">
+				<div style="background:#BCC6CC; padding:5px; box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);" class="container">
 					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 				    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				    	<span class="icon-bar"></span>
@@ -59,14 +59,14 @@
 				    </a>
 				 
 				    <!-- Be sure to leave the brand out there if you want it shown -->
-				    <a class="brand hidden-phone" href="javascript:void()">Jesse's Test Application</a>
+				    <div>Jesse's Test Application</div>
 					<div class="brand visible-phone">Call: 503-505-7204</div>
 					
 					<a class="brand right visible-desktop" href="#">Call: (919) 867-1418</a>
 				</div>
 			</div>
 		</div>
-		<div class="hero" style="margin-top:40px;">
+		<div class="hero" style="margin-top:70px;">
 			<div class="container">
 	<a class="hidden-phone" href="javascript:void();" id="videoPlay"></a>
 	<h2 class="hidden-phone">
