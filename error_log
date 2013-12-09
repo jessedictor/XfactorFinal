@@ -1,0 +1,28 @@
+[09-Dec-2013 04:08:50] PHP Warning:  require(/path/to/twilio-php/Services/Twilio.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home3/jesse/public_html/jessedictor.com/twilio/test.php on line 3
+[09-Dec-2013 04:08:50] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/path/to/twilio-php/Services/Twilio.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home3/jesse/public_html/jessedictor.com/twilio/test.php on line 3
+[09-Dec-2013 04:10:28] PHP Fatal error:  Uncaught exception 'Services_Twilio_RestException' with message 'The requested resource /2010-04-01/Accounts/SMS/Messages.json was not found' in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php:293
+Stack trace:
+#0 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php(217): Services_Twilio->_processResponse(Array)
+#1 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/ListResource.php(92): Services_Twilio->createData('/2010-04-01/Acc...', Array)
+#2 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/Rest/SmsMessages.php(16): Services_Twilio_ListResource->_create(Array)
+#3 /home3/jesse/public_html/jessedictor.com/twilio/test.php(16): Services_Twilio_Rest_SmsMessages->create('615-594-1437', '971-227-8256', 'Test message!')
+#4 {main}
+  thrown in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php on line 293
+[09-Dec-2013 04:11:17] PHP Fatal error:  Uncaught exception 'Services_Twilio_RestException' with message 'The requested resource /2010-04-01/Accounts/SMS/Messages.json was not found' in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php:293
+Stack trace:
+#0 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php(217): Services_Twilio->_processResponse(Array)
+#1 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/ListResource.php(92): Services_Twilio->createData('/2010-04-01/Acc...', Array)
+#2 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/Rest/SmsMessages.php(16): Services_Twilio_ListResource->_create(Array)
+#3 /home3/jesse/public_html/jessedictor.com/twilio/test.php(16): Services_Twilio_Rest_SmsMessages->create('15035057204', '19712278256', 'Test message!')
+#4 {main}
+  thrown in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php on line 293
+[09-Dec-2013 04:11:22] PHP Fatal error:  Uncaught exception 'Services_Twilio_RestException' with message 'The requested resource /2010-04-01/Accounts/SMS/Messages.json was not found' in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php:293
+Stack trace:
+#0 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php(217): Services_Twilio->_processResponse(Array)
+#1 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/ListResource.php(92): Services_Twilio->createData('/2010-04-01/Acc...', Array)
+#2 /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio/Rest/SmsMessages.php(16): Services_Twilio_ListResource->_create(Array)
+#3 /home3/jesse/public_html/jessedictor.com/twilio/test.php(16): Services_Twilio_Rest_SmsMessages->create('15035057204', '19712278256', 'Test message!')
+#4 {main}
+  thrown in /home3/jesse/public_html/jessedictor.com/twilio/Services/Twilio.php on line 293
+[09-Dec-2013 04:13:30] PHP Warning:  require(/path/to/twilio-php/Services/Twilio.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home3/jesse/public_html/jessedictor.com/twilio/test.php on line 3
+[09-Dec-2013 04:13:30] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/path/to/twilio-php/Services/Twilio.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home3/jesse/public_html/jessedictor.com/twilio/test.php on line 3
