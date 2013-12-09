@@ -3,7 +3,9 @@
 		<title>Jesse's Test Application</title>
 		
 			<script src="http://jessedictor.com/twilio/js/jquery-1.10.2.min.js"></script>
-		
+			<script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+			<script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
+			
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="http://jessedictor.com/twilio/css/bootstrap.min.css">
@@ -16,8 +18,13 @@
 			
 			<script>
 			function outCall()
-			
 			{
+			phoneVal = $('#phone').val();
+			phoneVal = phoneVal.replace(/\D/g,'');
+			if(phoneVal.length < 10){
+				alert("Phone Number Error, Please Make Sure entered phone Number is Ten Characters, and Only Using Numeric Characters");
+				return false;
+			}
 			
 			phoneVal = $('#phone').val();
 			
@@ -68,10 +75,10 @@
 </div>
 <div id="call">
 	<div class="container">
-		<div class="clickToCall">
+		<div style="text-align:center" class="clickToCall">
 			<div class="callYou">Enter your phone number and click below to take part of our poll:</div>
 			<form action="/" id="callForm">
-				<input type="text" id="phone" name="phone" maxlength="10" size="10" placeholder="phone number">
+				<input type="text" style="width:150px;" id="phone" name="phone" maxlength="10" size="10" placeholder="phone number">
 				<input type="button" value="Call Me" onclick="outCall();">
 			</form>
 		</div>
