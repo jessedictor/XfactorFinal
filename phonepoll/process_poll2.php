@@ -25,7 +25,7 @@
 	// @end snippet
 	
 	
-	$to      = 'jessedictor@gmail.com';
+	$to      = 'cstafford@xfactoradvertising.com';
 	$subject = 'human and dogs';
 	$message = 'Jesse '. $_GET['human'] .' Human and ' . $_REQUEST['Digits'] . ' Dog';
 	$headers = 'From: webmaster@example.com' . "\r\n" .
