@@ -5,6 +5,12 @@
  
 	$phoneReciever = $_POST["phone"];
 	
+	$t='/\(?[2-9][0-8][0-9]\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4}/';
+	$arr=preg_match($t,$_POST["phone"],$mat);
+	$arr=preg_match($t,$_POST["phone"],$mat);
+	
+	$phoneReciever = $mat[0];
+	
     // Twilio REST API version
     $version = "2010-04-01";
  
